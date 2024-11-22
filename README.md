@@ -4,6 +4,8 @@ This is a simple web-based implementation of the classic Tic-Tac-Toe game. You c
 
 ## Getting Started
 
+To preview this project use this [link](https://top-tic-tac-ae757s5qv-ejmabundas-projects.vercel.app/).
+
 To get started with this project, simply clone the repository and open `index.html` in your web browser.
 
 ```sh
