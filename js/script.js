@@ -4,9 +4,8 @@ board = [
     [null, null, null]
 ]
 
+// Finds the winner of a tic-tac-toe game
 function get_winner(board) {
-    // Finds the winner of a tic-tac-toe game
-    
     // Check board validity
     if (board.length != 3) {
         throw new Error('Invalid board');
@@ -47,6 +46,6 @@ function get_winner(board) {
     }
     
     return null;
-}
+}  // get_winner
 
 // console.log(get_winner(board))

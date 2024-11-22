@@ -1,0 +1,54 @@
+$green: #95CA91;
+$dark-green: #4E974B;
+
+// Normalise
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .move {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+body {
+    background-color: $dark-green;
+    width: 100vw;
+    height: 100vh;
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        * {
+            border-radius: 5px;
+            width: 50vw;
+        }
+
+        #score {
+            height: 10vh;
+            background-color: $green;
+        }
+        #board {
+            height: 50vw;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            .row {
+                flex: 1;
+                display: flex;
+                gap: .5rem;
+
+                .move {
+                    background-color: $green;
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
