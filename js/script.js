@@ -26,7 +26,7 @@ document.querySelectorAll('.move').forEach((button, index) => {
             let winner = get_winner(board);
 
             if (winner !== null) {
-                alert(`${winner} wins`)
+                document.querySelector('.text').textContent = `${winner} wins`;
             }
         }
     });

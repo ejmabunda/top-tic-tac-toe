@@ -9,9 +9,9 @@ $dark-green: #4E974B;
 }
 
 body, .move {
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
 
 body {

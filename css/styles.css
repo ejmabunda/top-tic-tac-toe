@@ -4,9 +4,9 @@
   box-sizing: border-box; }
 
 body, .move {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  display: flex; }
+  justify-content: center; }
 
 body {
   background-color: #4E974B;
