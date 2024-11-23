@@ -4,6 +4,36 @@ board = [
     [null, null, null]
 ]
 
+let current_player = '';
+function get_current_player() {
+    if (current_player == 'X') {
+        return 'O';
+    }
+    return 'X';
+}
+
+document.querySelectorAll('.move').forEach((button, index) => {
+    
+    button.addEventListener('click', (event) => {
+        let row = Math.floor(index / 3);
+        let col = index % 3;
+
+        if (board[row][col] == null) {
+            current_player = get_current_player();
+            board[row][col] = current_player;
+            event.target.textContent = board[row][col];
+            
+            let winner = get_winner(board);
+
+            if (winner !== null) {
+                alert(`${winner} wins`)
+            }
+        }
+    });
+
+    
+});
+
 // Finds the winner of a tic-tac-toe game
 function get_winner(board) {
     // Check board validity
@@ -47,5 +77,3 @@ function get_winner(board) {
     
     return null;
 }  // get_winner
-
-// console.log(get_winner(board))

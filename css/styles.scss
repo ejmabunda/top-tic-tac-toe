@@ -26,15 +26,15 @@ body {
 
         * {
             border-radius: 5px;
-            width: 50vw;
+            width: 40vw;
         }
 
         #score {
-            height: 10vh;
+            height: 5vh;
             background-color: $green;
         }
         #board {
-            height: 50vw;
+            height: 40vw;
             display: flex;
             flex-direction: column;
             gap: .5rem;
@@ -47,6 +47,9 @@ body {
                 .move {
                     background-color: $green;
                     flex: 1;
+                }
+                .move:hover {
+                    cursor: pointer;
                 }
             }
         }
